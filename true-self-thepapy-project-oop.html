@@ -1,0 +1,775 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRUE SELF THEPAPY</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+  
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(#111, #071a1a);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  height: 30px;
+  width: 300px;
+  text-decoration: none;
+  border: 0px;
+  padding: 5px;
+}
+.logo a {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  text-decoration: none;
+}
+ion-icon {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: black;
+}
+ion-icon:hover {
+  cursor: pointer;
+}
+.search a {
+  display: flex;
+}
+header a ion-icon {
+  position: relative;
+  right: 3px;
+}
+
+.img-slider img {
+  height: 720px;
+  width: 1080px;
+}
+@keyframes slide {
+  0% {
+    left: 0px;
+  }
+  15% {
+    left: 0px;
+  }
+  20% {
+    left: -1080px;
+  }
+  32% {
+    left: -1080px;
+  }
+  35% {
+    left: -2160px;
+  }
+  47% {
+    left: -2160px;
+  }
+  50% {
+    left: -3240px;
+  }
+  63% {
+    left: -3240px;
+  }
+  66% {
+    left: -4320px;
+  }
+  79% {
+    left: -4320px;
+  }
+  82% {
+    left: -5400px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.img-slider {
+  display: flex;
+  float: left;
+  position: relative;
+  width: 1080px;
+  height: 720px;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition-duration: 2s;
+}
+
+.heading1 {
+  opacity: 0;
+}
+.search {
+  display: flex;
+  position: relative;
+}
+.section1 {
+  width: 1080px;
+  overflow: hidden;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.header,
+.section {
+  width: 100%;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.header::after,
+.header::before,
+.section::after,
+.section::before {
+  content: "";
+  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+}
+
+.header::after {
+  left: -200px;
+}
+
+.header::before {
+  right: -200px;
+}
+
+.mb {
+  margin-bottom: 30px;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.section {
+  background: #1d1f1e;
+  position: relative;
+  padding: 80px 0;
+}
+
+.section::after {
+  left: -200px;
+}
+
+.section::before {
+  width: 600px;
+  right: -200px;
+}
+
+.section:nth-child(even) {
+  background: #141615;
+}
+
+.section:nth-child(even)::after,
+.section:nth-child(even)::before {
+  display: none;
+}
+
+.primary {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.secondary {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.tertiary {
+  font-size: 15px;
+}
+/* End Base */
+
+/* Menu */
+.menu {
+  width: 100%;
+  background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+  padding: 12px 0;
+}
+
+.menu .container {
+  justify-content: space-between;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav-item {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item:hover a {
+  color: #29a396;
+  transition: 0.3s linear;
+}
+
+.nav-item:last-of-type {
+  margin-right: 0;
+}
+/* End Menu */
+
+/* Buttons */
+.btn {
+  padding: 10px 28px;
+  background: var(--clr-primary);
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #165f56;
+  transition: 0.3s linear;
+}
+
+.btn-2 {
+  font-size: 35px;
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s linear;
+}
+
+.btn-2:hover {
+  color: #29a396;
+}
+
+/* End Buttons */
+
+/* Header */
+.text {
+  width: 60%;
+}
+
+.visual {
+  width: 40%;
+}
+
+.visual img {
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.header h1 span {
+  color: var(--clr-primary);
+}
+/* End Header */
+
+.section:nth-child(even) .visual {
+  margin-right: 30px;
+}
+
+/* Trainer */
+#trainer {
+  text-align: center;
+}
+
+.trainer img {
+  border-top-left-radius: 80px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 10px;
+  outline: 2px solid #fff;
+  padding: 14px;
+}
+
+.trainer .mb {
+  margin-bottom: 10px;
+}
+/* End Trainer */
+
+/* Testimonial */
+#testimonial .visual img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+}
+
+.client {
+  background: #fff;
+  color: #000;
+  padding: 20px 10px;
+  margin-right: 20px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.client img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 40px);
+}
+
+.client h2 {
+  margin: 20px 0 10px 0;
+}
+/* End Testimonial */
+
+/* Discount */
+#discount {
+  padding: 40px 0;
+}
+/* End  Discount */
+
+/* Footer */
+.footer {
+  padding: 30px 0;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+/* End Footer */
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile-btn {
+    display: block;
+    font-size: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+  }
+
+  .menu.active .nav-item {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .nav,
+  .menu .btn {
+    display: none;
+  }
+
+  .menu.active .nav,
+  .menu.active .btn {
+    display: block;
+  }
+
+  .menu.active {
+    padding: 30px 0;
+    width: 100%;
+    transition: all 0.8s ease;
+  }
+
+  .text,
+  .visual {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .text h1 {
+    font-size: 45px;
+  }
+
+  .primary {
+    font-size: 28px;
+  }
+
+  .secondary {
+    font-size: 22px;
+  }
+
+  .tertiary {
+    font-size: 14px;
+  }
+
+  .trainer {
+    margin-bottom: 20px;
+  }
+
+  .client {
+    margin-bottom: 50px;
+  }
+
+  #discount .visual img {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 530px) {
+  .header::after,
+  .header::before,
+  .section::after,
+  .section::before {
+    display: none;
+  }
+
+  .primary {
+    font-size: 25px;
+  }
+
+  .secondary {
+    font-size: 20px;
+  }
+
+  .tertiary {
+    font-size: 12px;
+  }
+
+  .text h1 {
+    font-size: 34px;
+  }
+
+  .btn,
+  .btn-2 {
+    font-size: 16px;
+  }
+}
+
+/* End Responsive */
+
+
+
+
+
+  </style>
+  <script>
+  //Js
+ 
+	document.querySelector(".mobile-btn").addEventListener("click", function () {
+	document.querySelector(".menu").classList.toggle("active");
+}); 
+</script>
+  <body>
+    <!-- Menu -->
+    <div class="menu">
+      <div class="container flex">
+        <!-- Mobile Button -->
+        <div class="mobile-btn">
+          <ion-icon name="grid"></ion-icon>
+        </div>
+        <div class="logo">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+        </div>
+
+        <ul class="nav">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#why-us">Features</a></li>
+          <li class="nav-item"><a href="#explore">Explore</a></li>
+          <li class="nav-item"><a href="#discount">Register</a></li>
+        </ul>
+
+        <a href="#" class="btn">Register</a>
+      </div>
+    </div>
+    <!-- End Menu -->
+
+    <!-- Header -->
+	 </div>
+    <div class="heading1">
+      <ion-icon name="menu" class="ham"></ion-icon>
+    </div>
+  </header>
+    <section>
+    <div class="section">
+      <div class="section1">
+        <div class="img-slider">
+           <img src ="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img" width="720px ",height = "1180px">
+           <img src ="https://images.pexels.com/photos/3094230/pexels-photo-3094230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt ="" class ="img" width="720px ",height = "1180px">
+			<img src = "https://images.pexels.com/photos/1375883/pexels-photo-1375883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"alt= ""class ="img"width="720px ",height = "1180px">
+			<img src = "https://images.pexels.com/photos/4056723/pexels-photo-4056723.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"alt= ""class ="img">
+			<img src = "https://images.pexels.com/photos/1300526/pexels-photo-1300526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"alt= ""class ="img">
+			<img src = "https://images.pexels.com/photos/2394051/pexels-photo-2394051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt = "" class ="img " >
+		</div>
+
+     </div>
+    <header class="header">
+      <div class="container flex">
+        <div class="text">
+          <h1 class="mb">
+            Complete Daily <br />
+            <span>Workout</span> At Home
+          </h1>
+
+          <p class="mb">
+            Yoga is a mind and body practice that can build strength and flexibility. It may also help manage pain and reduce stress. Various styles of
+			yoga combine physical postures, breathing techniques, and meditation.
+          </p>
+
+          <a href="#" class="btn mt">Get Started Now</a>
+        </div>
+
+        <div class="visual">
+          <img
+            src="https://images.pexels.com/photos/2529371/pexels-photo-2529371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Why Us -->
+    <div class="section" id="why-us">
+      <div class="container flex">
+        <div class="text">
+          <h2 class="primary mb">Why Choose Us?</h2>
+          <h3 class="secondary mb">Consulatation with Expert.</h3>
+          <p class="tertiary">
+             we are dedicated to providing a holistic
+			 and enriching experience tailored to your individual needs
+          </p>
+
+          <h3 class="secondary mb">Consulatation with Expert.</h3>
+          <p class="tertiary">
+            How do you believe personalized consultations can help 
+			address your specific health goals and requirements?
+          </p>
+        </div>
+        <div class="visual">
+          <img
+            src="https://images.pexels.com/photos/4323325/pexels-photo-4323325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- End Why Us -->
+
+    <!-- Explore -->
+    <div class="section" id="explore">
+      <div class="container flex">
+        <div class="visual">
+          <img
+            src="https://images.pexels.com/photos/4323300/pexels-photo-4323300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <h2 class="primary mb">
+            Explore Our Yoga <br />
+            Studio
+          </h2>
+          <p class="tertiary mb">Exploring our fitness studio means discovering
+		  a place where you can nurture your body, mind, and spirit through yoga 
+		  and wellness programs designed just for you. Let us help you find the 
+		  perfect path to achieve your fitness and wellness goals.
+
+           
+          </p>
+
+          <a href="#" class="btn mt">Get Started Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Explore -->
+
+    <!-- Trainer -->
+    <div class="section" id="trainer">
+      <h2 class="primary mb">Our Professional Trainers</h2>
+      <div class="container flex">
+        <div class="trainer">
+          <img
+            src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer1.jpg""
+            alt=""
+          />
+          <h3 class="secondary mb">Amice </h3>
+          <p class="tertiary mb">
+            The ancient science of Yoga captured my imagination while 
+			I was living and working as a lawyer in the United Kingdom.
+          </p>
+
+          <a href="#" class="btn-2">
+            <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="trainer">
+          <img
+            src="https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/trainer2.jpg"
+            alt=""
+          />
+          <h3 class="secondary mb">Jagath Gunaratne</h3>
+          <p class="tertiary mb">
+            Jagath is a certified teacher of Hatha Yoga as well as of Meditation practices
+          </p>
+
+          <a href="#" class="btn-2">
+            <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="trainer">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeplOG-xfZ66lMqz1NgxqM6wtsYuJoAkpSmFBcXSaEbbjI7R8Sb6e8wrxrYRIqwUQEgrg&usqp=CAU"
+            alt=""
+          />
+          <h3 class="secondary mb">Shaunagh Aluwihare</h3>
+          <p class="tertiary mb">
+            Shaunagh is originally from England and has been teaching for the last 15 years in both England and Sri Lanka.
+          </p>
+
+          <a href="#" class="btn-2">
+            <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- End Trainer -->
+
+    <!-- Testimonial -->
+    <div class="section" id="testimonial">
+      <div class="container flex">
+        <div class="text">
+          <h2 class="primary">
+            That's What Our Super <br />
+            Client Says
+          </h2>
+
+          <br />
+          <br />
+          <br />
+
+          <div class="client">
+            <img
+              src="https://images.pexels.com/photos/3822353/pexels-photo-3822353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+            <h2 class="secondary">Exelent Training</h2>
+            <p class="tertiary">
+              Thank you so much for your kind words! I'm thrilled 
+			  to hear that you're enjoying the yoga training.I'm committed 
+			  to providing you with the best possible experience and helping you achieve your wellness goals through yoga. If there's ever anything specific you'd like to focus on or any
+			  feedback you'd like to share, please don't hesitate to let me know.
+            </p>
+          </div>
+        </div>
+        <div class="visual">
+          <img
+            src="https://images.pexels.com/photos/3822692/pexels-photo-3822692.jpeg?auto=compress&cs=tinysrgb&w=600s"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonial -->
+
+    <!-- Discount -->
+    <div class="section" id="discount">
+      <div class="container flex">
+        <div class="visual">
+          <img
+            src="https://images.pexels.com/photos/3822120/pexels-photo-3822120.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <h2 class="primary mb">
+            Yoga Classes This Summer, Pay Now And Get 25% Discount
+          </h2>
+
+          <p class="tertiary mb">
+           Whether you're a seasoned yogi or just starting your journey, our classes cater to all levels. Experience the 
+		   benefits of yoga, from increased flexibility to enhanced mental clarity.
+          </p>
+
+          <a href="#" class="btn bt">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Discount -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container flex">
+        <p class="tertiary">
+			 
+          &copy; 2024 Programmer Cloud. All Rights Reserved.
+        </p>
+		
+      </div>
+    </Footer>
+    
+    <!-- End Footer -->
+
+    <!-- Ion Icons Js -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+	
+  </body>
+ 
+</html>
+
